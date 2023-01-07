@@ -1,0 +1,51 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 3.0 (September 3, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%!TEX program = xelatex
+% NOTE: this template must be compiled with XeLaTeX rather than PDFLaTeX
+% due to the custom fonts used. The line above should ensure this happens
+% automatically, but if it doesn't, your LaTeX editor should have a simple toggle
+% to switch to using XeLaTeX.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt]{FreemanCV}
+\usepackage{enumitem}
+\columnratio{0.60, 0.40}
+\newcommand{\titlePosition}{Machine Learning Engineer}
+\newcommand{\summaryPosition}{Machine learning engineer}
+\newcommand{\currentPosition}{Senior ML engineer}
+
+\begin{document}
+
+% First part
+\begin{paracol}{2}
+\input{parts/title.tex}
+\switchcolumn
+\input{parts/contacts.tex}
+\end{paracol}
+
+% Second part
+\begin{paracol}{2}
+\input{parts/summary.tex}
+\medskip
+\input{parts/work_experience.tex}
+\switchcolumn
+\input{parts/education.tex}
+\input{parts/skills.tex}
+\input{parts/languages.tex}
+\end{paracol}
+
+\end{document}
